@@ -55,6 +55,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const hamburger = document.querySelector(".hamburger");
   const navMenu = document.querySelector(".nav-menu");
   const dropdowns = document.querySelectorAll(".dropdown");
+  const dropdownMenu = document.querySelector(".dropdown-menu");
+
+  dropdowns.forEach((dropdown) => {
+    dropdown.addEventListener("click", (e) => {
+      e.preventDefault();
+      dropdownMenu.classList.toggle("active");
+    });
+  });
 
   hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("active");

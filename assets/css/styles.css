@@ -158,7 +158,7 @@ nav.solid {
   width: 200px;
 }
 
-.dropdown:hover .dropdown-menu {
+.dropdown-menu.active {
   display: block;
 }
 
