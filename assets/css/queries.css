@@ -155,4 +155,44 @@
     font-size: 0.9rem !important;
     text-align: center !important;
   }
+
+  /* ================================================
+    Quality Control Page Styles
+  =============================================== */
+  .manufacturing-standards h1 {
+    text-align: center;
+  }
+
+  .manufacturing-timeline::before {
+    left: 0;
+  }
+
+  .manufacturing-timeline-item {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 0;
+  }
+
+  .manufacturing-timeline-item:nth-child(even) {
+    left: 0;
+  }
+
+  .manufacturing-timeline-content {
+    text-align: left;
+  }
+
+  .manufacturing-timeline-content::after {
+    left: -10px !important;
+    right: auto !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .manufacturing-timeline-content {
+    padding: 1rem;
+  }
+
+  .manufacturing-timeline-item {
+    padding-left: 1.5rem;
+  }
 }
