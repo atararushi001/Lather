@@ -59,8 +59,8 @@ document.addEventListener("DOMContentLoaded", () => {
   hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("active");
     hamburger.innerHTML = navMenu.classList.contains("active")
-      ? '<i class="ph-x"></i>'
-      : '<i class="ph-list"></i>';
+      ? '<i class="ph ph-x"></i>'
+      : '<i class="ph ph-list"></i>';
   });
 
   dropdowns.forEach((dropdown) => {
