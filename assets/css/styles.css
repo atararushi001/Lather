@@ -93,6 +93,54 @@ ul {
   list-style: none;
 }
 
+/* Page Header */
+.page-header {
+  background-image: linear-gradient(
+      180deg,
+      rgba(51, 51, 51, 1) 0%,
+      rgba(51, 51, 51, 0.7) 50%,
+      rgba(51, 51, 51, 1) 100%
+    ),
+    url("../images/page-header-bg.jpg");
+  background-position: center 80%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--background-color);
+  text-align: center;
+}
+
+.page-header .container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.page-header h2 {
+  font-size: 2.5rem;
+}
+
+.page-header p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.page-header a {
+  color: var(--background-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.page-header a:hover {
+  color: var(--primary-color);
+}
+
 /* Navbar */
 nav {
   position: fixed;
@@ -201,6 +249,14 @@ footer {
 .footer-section h3 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-section h3 i {
+  font-size: 1.5rem;
   color: var(--primary-color);
 }
 
@@ -613,3 +669,9 @@ img {
 .timeline-content p i {
   color: var(--primary-color);
 }
+
+/* ================================================
+  About Page Styles
+=============================================== */
+
+/* About Page */
