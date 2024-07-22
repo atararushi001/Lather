@@ -148,4 +148,11 @@
     width: 100%;
     aspect-ratio: 1 / 1;
   }
+
+  /* Our Strategy */
+  .our-strategy p,
+  .global-presence p {
+    font-size: 0.9rem !important;
+    text-align: center !important;
+  }
 }
