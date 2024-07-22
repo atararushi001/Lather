@@ -1,0 +1,67 @@
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: var(--text-color);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu li {
+    margin-bottom: 1rem;
+  }
+
+  .dropdown-menu {
+    position: static;
+    display: none;
+    padding: 0.5rem 0 0.5rem 1rem;
+  }
+
+  .dropdown.active .dropdown-menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /* Footer Styles */
+  footer .container {
+    flex-direction: column;
+  }
+
+  /* About Us */
+  .about-us p {
+    font-size: 1rem;
+  }
+
+  /* Why Us */
+  .why-us .why-us-text {
+    font-size: 1rem;
+  }
+
+  .why-us-card:nth-child(2) {
+    transform: translateY(0px);
+  }
+
+  /* Our Achievemnts */
+  .our-achievements {
+    flex-direction: column;
+  }
+
+  .our-achievements .left-side {
+    width: 100%;
+  }
+
+  .our-achievements img {
+    width: 100%;
+  }
+}

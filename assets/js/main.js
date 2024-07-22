@@ -50,3 +50,25 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".nav-menu");
+  const dropdowns = document.querySelectorAll(".dropdown");
+
+  hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+    hamburger.innerHTML = navMenu.classList.contains("active")
+      ? '<i class="ph-x"></i>'
+      : '<i class="ph-list"></i>';
+  });
+
+  dropdowns.forEach((dropdown) => {
+    dropdown.addEventListener("click", (e) => {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        dropdown.classList.toggle("active");
+      }
+    });
+  });
+});
