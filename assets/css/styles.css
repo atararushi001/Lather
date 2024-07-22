@@ -27,6 +27,18 @@
   background: var(--primary-color);
 }
 
+/* Changing the selection color for the entire document */
+::selection {
+  background: var(--primary-color); /* Teal background */
+  color: var(--background-color); /* White text */
+}
+
+/* For Mozilla Firefox */
+::-moz-selection {
+  background: var(--primary-color); /* Teal background */
+  color: var(--background-color); /* White text */
+}
+
 /* Root Variables */
 :root {
   --primary-color: #c7713d;

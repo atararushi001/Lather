@@ -23,31 +23,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
   // Scroll event listener
   window.addEventListener("scroll", updateNavbar);
-});
 
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  direction: "horizontal",
-  loop: true,
-  effect: "fade",
-
-  autoplay: {
-    delay: 2500,
-  },
-
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-
-document.addEventListener("DOMContentLoaded", () => {
   const hamburger = document.querySelector(".hamburger");
   const navMenu = document.querySelector(".nav-menu");
   const dropdowns = document.querySelectorAll(".dropdown");
@@ -75,4 +51,26 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+});
+
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+  effect: "fade",
+
+  autoplay: {
+    delay: 2500,
+  },
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
