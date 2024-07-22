@@ -1,4 +1,8 @@
 @media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
   .nav-menu {
     display: none;
     position: absolute;
@@ -45,10 +49,19 @@
     display: block;
   }
 
+  /* Page Header */
+  #page-header .container {
+    align-items: center;
+  }
+
   /* Footer Styles */
   footer .container {
     flex-direction: column;
   }
+
+  /* ================================================
+    Home Page Styles
+  =============================================== */
 
   /* About Us */
   .about-us p {
@@ -75,5 +88,64 @@
 
   .our-achievements img {
     width: 100%;
+  }
+
+  /* ================================================
+    About Page Styles
+  =============================================== */
+
+  /* About Us Section */
+  .about-us-section {
+    flex-direction: column-reverse;
+  }
+
+  .about-us-section img {
+    width: 100%;
+  }
+
+  .about-us-section p {
+    font-size: 0.9rem !important;
+  }
+
+  .about-us-section .about-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-us-section .about-content h1::after {
+    margin: 0 auto;
+  }
+
+  /* Vision & Mission */
+  .vision-mission .vision,
+  .vision-mission .mission {
+    align-items: center;
+    text-align: center;
+  }
+
+  .vision-mission .vision h2,
+  .vision-mission .mission h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .vision-mission .vision p,
+  .vision-mission .mission p {
+    font-size: 0.9rem !important;
+    text-align: center;
+  }
+
+  /* Business Growth */
+  .business-growth .container h1 {
+    text-align: center;
+  }
+
+  .growth-description {
+    font-size: 0.9rem !important;
+    text-align: center;
+  }
+
+  .growth-item {
+    width: 100%;
+    aspect-ratio: 1 / 1;
   }
 }

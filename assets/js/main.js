@@ -1,32 +1,28 @@
 // main.js
-
-window.addEventListener("scroll", function () {
+window.addEventListener("DOMContentLoaded", function () {
   const navbar = document.getElementById("navbar");
-  const hero = document.getElementById("hero");
-  const heroHeight = hero.offsetHeight;
+  const hero = document.getElementById("hero") || document.body;
+  const pageHeader = document.getElementById("page-header") || document.body;
 
-  if (window.scrollY > heroHeight) {
-    navbar.classList.remove("transparent");
-    navbar.classList.add("solid");
-  } else {
-    navbar.classList.remove("solid");
-    navbar.classList.add("transparent");
+  function updateNavbar() {
+    const scrollPosition = window.scrollY;
+    const heroHeight = hero.offsetHeight;
+    const pageHeaderHeight = pageHeader.offsetHeight;
+
+    if (scrollPosition > Math.min(heroHeight, pageHeaderHeight)) {
+      navbar.classList.remove("transparent");
+      navbar.classList.add("solid");
+    } else {
+      navbar.classList.remove("solid");
+      navbar.classList.add("transparent");
+    }
   }
-});
 
-// Initial call to set the correct class based on the initial scroll position
-window.addEventListener("load", function () {
-  const navbar = document.getElementById("navbar");
-  const hero = document.getElementById("hero");
-  const heroHeight = hero.offsetHeight;
+  // Initial call
+  updateNavbar();
 
-  if (window.scrollY > heroHeight) {
-    navbar.classList.remove("transparent");
-    navbar.classList.add("solid");
-  } else {
-    navbar.classList.remove("solid");
-    navbar.classList.add("transparent");
-  }
+  // Scroll event listener
+  window.addEventListener("scroll", updateNavbar);
 });
 
 const swiper = new Swiper(".swiper", {
