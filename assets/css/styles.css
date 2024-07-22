@@ -446,3 +446,72 @@ section h1::after {
   font-size: 1.25rem;
   font-weight: 500;
 }
+
+/* Our Achievements Section */
+.our-achievements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 2rem;
+  gap: 2rem;
+  min-height: 100dvh;
+}
+
+.left-side {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  height: 100%;
+}
+
+img {
+  width: 40%;
+  height: auto;
+}
+
+.our-achievements h1::after {
+  margin-left: 0;
+  text-align: left;
+}
+
+.our-achievements .subtitle {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 30px;
+  border-left: 2px solid var(--primary-color);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+}
+
+.timeline-content {
+  background-color: var(--text-color);
+  color: var(--background-color);
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(51, 51, 51, 0.1);
+}
+
+.timeline-content p {
+  margin: 0;
+}
