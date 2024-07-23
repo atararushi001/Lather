@@ -156,6 +156,16 @@
   /* ================================================
     Quality Control Page Styles
   =============================================== */
+  .quality-control h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .quality-control p {
+    font-size: 1rem !important;
+    text-align: center;
+  }
+
   .manufacturing-standards h1 {
     text-align: center;
   }
@@ -183,11 +193,31 @@
     right: auto !important;
   }
 
+  .innovation h1 {
+    font-size: 2rem;
+  }
+
+  .innovation p {
+    font-size: 1rem !important;
+  }
+
   /* ================================================
     CSR Page Styles
   =============================================== */
+  .csr h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .csr p {
+    font-size: 1rem !important;
+    text-align: center;
+  }
+
   .csr-card {
     flex-basis: 100%;
+    align-items: center;
+    text-align: center;
   }
 
   /* ================================================
@@ -201,6 +231,32 @@
   .contact .contact-form,
   .contact img {
     width: 100%;
+  }
+
+  .product-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .product-title h1::after {
+    margin: 5px auto;
+  }
+
+  .product-title h1 {
+    font-size: 2rem;
+  }
+
+  .product-header img {
+    width: 100%;
+  }
+
+  .product-title {
+    align-items: center;
+  }
+
+  .product-overview p,
+  .product-title p {
+    font-size: 1rem !important;
   }
 }
 
