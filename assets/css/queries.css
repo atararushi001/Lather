@@ -6,46 +6,43 @@
   .nav-menu {
     display: none;
     position: absolute;
-    top: 70px;
+    top: 100%;
     left: 0;
     width: 100%;
     background-color: var(--text-color);
     flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem;
   }
 
   .nav-menu.active {
-    display: flex;
+    display: block;
+    min-height: 100dvh;
+    z-index: 999999 !important;
+    overflow-y: auto;
   }
 
-  .nav-menu li {
-    padding-bottom: 1rem;
+  .nav-menu > li > a {
+    padding: 1rem;
   }
 
-  .dropdown-menu {
+  .nav-menu ul {
     position: static;
     display: none;
-    padding: 0.5rem 0 0.5rem 1rem;
-  }
-
-  .dropdown {
-    text-align: left !important;
     width: 100%;
   }
 
-  .dropdown a {
-    justify-content: flex-start !important;
+  .nav-menu ul a {
+    padding-left: 2rem;
   }
 
-  .dropdown.active .dropdown-menu {
-    display: block;
-    width: 100%;
-    padding-left: 0;
-    padding-top: 1rem;
+  .nav-menu ul ul a {
+    padding-left: 3rem;
   }
 
   .hamburger {
+    display: block;
+  }
+
+  .nav-menu li.active > ul {
     display: block;
   }
 

@@ -230,44 +230,70 @@ nav.solid {
   background-color: var(--text-color);
 }
 
-/* Dropdown styles */
-.dropdown {
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  list-style: none;
+}
+
+.nav-menu > li {
   position: relative;
 }
 
-.dropdown-menu {
+.nav-menu > li > a {
+  color: var(--background-color);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-menu > li > a:hover {
+  color: var(--primary-color);
+}
+
+/* Dropdown styles */
+.nav-menu ul {
   display: none;
   position: absolute;
-  top: 50px;
+  top: 100%;
   left: 0;
   background-color: var(--text-color);
-  padding: 1rem;
-  border-radius: 4px;
-  width: 250px;
+  min-width: 280px;
+  list-style: none;
+  padding: 0.5rem 0;
 }
 
-.dropdown-menu.active {
-  display: block;
+.nav-menu ul li {
+  position: relative;
+  border-bottom: 1px solid var(--background-color);
 }
 
-.dropdown-menu li {
+.nav-menu ul li:last-child {
+  border-bottom: none;
+}
+
+.nav-menu ul a {
+  color: var(--background-color);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 0.5rem;
-  border-bottom: 1px solid var(--background-color);
-  color: var(--background-color);
-  padding: 0.5rem;
-  transition: all 0.3s ease;
 }
 
-.dropdown-menu a {
-  color: var(--background-color);
-  text-decoration: none;
-}
-
-.dropdown-menu a:hover li {
+.nav-menu ul a:hover {
   color: var(--primary-color);
+}
+
+/* Nested dropdown styles */
+.nav-menu ul ul {
+  top: 0;
+  left: 100%;
 }
 
 /* Hamburger menu */
@@ -276,6 +302,11 @@ nav.solid {
   cursor: pointer;
   font-size: 1.5rem;
   color: var(--background-color);
+}
+
+/* Add this for dropdowns to be controlled by active class */
+.nav-menu li.active > ul {
+  display: block;
 }
 
 /* Footer Styles */
