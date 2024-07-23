@@ -1110,3 +1110,71 @@ img {
 .equipment-item:hover {
   background-color: var(--text-color);
 }
+
+/* ================================================
+    CSR Page Styles
+  =============================================== */
+
+.csr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-block: 2rem;
+}
+
+.csr-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.csr-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  text-align: left;
+  flex-basis: calc(50% - 1rem);
+  background-color: var(--background-color);
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 25px rgba(51, 51, 51, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.csr-card i {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.csr-card:hover {
+  transform: translateY(-5px);
+}
+
+.csr-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.csr-card p {
+  margin-bottom: 1rem;
+}
+
+.csr-highlight {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.csr-highlight h2 {
+  color: var(--background-color);
+  margin-bottom: 1rem;
+}

@@ -185,6 +185,13 @@
     left: -10px !important;
     right: auto !important;
   }
+
+  /* ================================================
+    CSR Page Styles
+  =============================================== */
+  .csr-card {
+    flex-basis: 100%;
+  }
 }
 
 @media screen and (max-width: 480px) {
