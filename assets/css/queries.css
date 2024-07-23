@@ -192,6 +192,19 @@
   .csr-card {
     flex-basis: 100%;
   }
+
+  /* ================================================
+    Contact Us Page Styles
+  =============================================== */
+
+  .contact {
+    flex-direction: column-reverse;
+  }
+
+  .contact .contact-form,
+  .contact img {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 480px) {
