@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const heroHeight = hero.offsetHeight;
     const pageHeaderHeight = pageHeader.offsetHeight;
 
-    if (scrollPosition > Math.min(heroHeight, pageHeaderHeight)-800) {
+    if (scrollPosition > Math.min(heroHeight, pageHeaderHeight)-750) {
       navbar.classList.remove("transparent");
       navbar.classList.add("solid");
     } else {
