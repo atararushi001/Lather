@@ -51,6 +51,14 @@
     align-items: center;
   }
 
+  #page-header h2 {
+    font-size: 1.8rem !important;
+  }
+
+  #page-header p {
+    font-size: .9rem !important;
+  }
+
   /* Footer Styles */
   footer .container {
     flex-direction: column;
