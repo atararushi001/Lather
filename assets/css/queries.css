@@ -56,6 +56,14 @@
     flex-direction: column;
   }
 
+  .swiper-content h1 {
+    font-size: 2rem !important;
+  }
+
+  .swiper-content p {
+    font-size: 1rem !important;
+  }
+
   /* ================================================
     Home Page Styles
   =============================================== */
