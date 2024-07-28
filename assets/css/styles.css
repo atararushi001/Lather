@@ -415,7 +415,7 @@ section h1::after {
 
 /* Hero Section */
 .swiper {
-  height: 100dvh;
+  min-height: 100dvh;
   display: flex;
   justify-content: center;
   align-items: center;
