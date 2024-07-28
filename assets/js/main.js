@@ -1,14 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   const navbar = document.getElementById("navbar");
-  const hero = document.getElementById("hero") || document.body;
-  const pageHeader = document.getElementById("page-header") || document.body;
 
   function updateNavbar() {
-    const scrollPosition = window.scrollY;
-    const heroHeight = hero.offsetHeight;
-    const pageHeaderHeight = pageHeader.offsetHeight;
-
-    if (scrollPosition > Math.min(heroHeight, pageHeaderHeight)-750) {
+    if (window.scrollY > 50) {
       navbar.classList.remove("transparent");
       navbar.classList.add("solid");
     } else {
