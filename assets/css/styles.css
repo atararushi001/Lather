@@ -1337,7 +1337,7 @@ img {
 
 .product-header img {
   height: 250px;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 10px;
 }
 
