@@ -1336,7 +1336,8 @@ img {
 }
 
 .product-header img {
-  height: 250px;
+  height: 300px;
+  width: 50% ;
   object-fit: cover;
   border-radius: 10px;
 }
