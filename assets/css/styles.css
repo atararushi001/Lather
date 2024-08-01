@@ -54,6 +54,7 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   scroll-behavior: smooth;
+  top: 0 !important;
 }
 
 .container {
@@ -1337,7 +1338,7 @@ img {
 
 .product-header img {
   height: 300px;
-  width: 50% ;
+  width: 50%;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -1439,4 +1440,37 @@ img {
 
 .product-applications li:hover {
   background-color: var(--text-color);
+}
+
+#google_translate_element select {
+  background-color: transparent;
+  color: var(--background-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 3px;
+  padding: 6px 8px;
+  font-size: 14px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  outline: none;
+  cursor: pointer;
+  width: 145px !important;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.75rem !important;
+}
+
+#google_translate_element select option {
+  background-color: var(--text-color);
+  color: var(--background-color);
+  padding: 8px;
+}
+
+.goog-te-gadget {
+  font-size: 0 !important;
+}
+
+.goog-te-gadget span {
+  display: none !important;
+}
+
+.skiptranslate iframe {
+  display: none !important;
 }

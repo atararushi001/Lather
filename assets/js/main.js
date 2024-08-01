@@ -87,6 +87,17 @@ document.addEventListener("DOMContentLoaded", function () {
       );
     }
   });
+
+  document
+    .getElementById("language-select")
+    .addEventListener("change", function () {
+      var lang = this.value;
+      if (lang !== "") {
+        var selectField = document.querySelector(".goog-te-combo");
+        selectField.value = lang;
+        selectField.dispatchEvent(new Event("change"));
+      }
+    });
 });
 
 const swiper = new Swiper(".swiper", {
