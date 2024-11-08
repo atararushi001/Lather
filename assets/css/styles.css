@@ -1492,3 +1492,15 @@ img {
 .my-float{
 	margin-top:16px;
 }
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.social-media a {
+  color: var(--background-color);
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
